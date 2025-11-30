@@ -9,4 +9,4 @@ brew install --cask volume-grid
 
 ## Casks
 
-- volume-grid
+- [volume-grid](https://github.com/euxx/volume-grid)

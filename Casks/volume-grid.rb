@@ -12,6 +12,13 @@ cask "volume-grid" do
 
   app "Volume Grid.app"
 
+  caveats do
+    <<~EOS
+      To remove the quarantine attribute after installation, run:
+        xattr -rd com.apple.quarantine /Applications/Volume\\ Grid.app
+    EOS
+  end
+
   uninstall quit: "one.eux.volumegrid"
 
   zap trash: [

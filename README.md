@@ -3,8 +3,7 @@ This tap contains custom Homebrew Casks.
 ## Usage
 
 ```sh
-brew tap euxx/casks
-brew install --cask volume-grid
+brew install --cask euxx/casks/volume-grid
 ```
 
 ## Casks

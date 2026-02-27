@@ -1,6 +1,6 @@
 cask "volume-grid" do
-  version "1.1.0"
-  sha256 "c573d612c48b40c67c70c3c346af47900c7115e24960bc9a89d03943af081331"
+  version "1.1.1"
+  sha256 "a354fd849ec217761fee2bbce26ca135eed1274b8b117ae3e10d3ee633b792ca"
 
   url "https://github.com/euxx/volume-grid/releases/download/v#{version}/VolumeGrid-v#{version}.dmg"
   name "Volume Grid"

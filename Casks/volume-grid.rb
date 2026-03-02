@@ -7,7 +7,7 @@ cask "volume-grid" do
   desc "Bringing back the classic volume HUD for macOS Tahoe 26 with more."
   homepage "https://github.com/euxx/volume-grid"
 
-  auto_updates true
+  auto_updates false
   depends_on macos: ">= :sonoma"
 
   app "Volume Grid.app"

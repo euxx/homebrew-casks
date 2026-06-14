@@ -4,11 +4,11 @@ cask "volume-grid" do
 
   url "https://github.com/euxx/volume-grid/releases/download/v#{version}/VolumeGrid-v#{version}.dmg"
   name "Volume Grid"
-  desc "Bringing back the classic volume HUD for macOS Tahoe 26 with more."
+  desc "Bringing back the classic volume HUD with more"
   homepage "https://github.com/euxx/volume-grid"
 
   auto_updates false
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :tahoe
 
   app "Volume Grid.app"
 
@@ -19,10 +19,10 @@ cask "volume-grid" do
   uninstall quit: "one.eux.volumegrid"
 
   zap trash: [
-    "~/Library/Preferences/one.eux.volumegrid.plist",
     "~/Library/Application Support/VolumeGrid",
     "~/Library/Caches/one.eux.volumegrid",
     "~/Library/Logs/VolumeGrid",
+    "~/Library/Preferences/one.eux.volumegrid.plist",
     "~/Library/Saved Application State/one.eux.volumegrid.savedState",
   ]
 end

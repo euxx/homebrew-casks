@@ -12,8 +12,9 @@ cask "volume-grid" do
 
   app "Volume Grid.app"
 
-  postflight do
-    system "xattr -d com.apple.quarantine #{appdir}/Volume\\ Grid.app"
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-dr", "com.apple.quarantine", "{{appdir}}/Volume Grid.app"]
   end
 
   uninstall quit: "one.eux.volumegrid"

@@ -13,8 +13,9 @@ cask "copied" do
 
   app "Copied.app"
 
-  postflight do
-    system "xattr", "-dr", "com.apple.quarantine", "#{appdir}/Copied.app"
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-dr", "com.apple.quarantine", "{{appdir}}/Copied.app"]
   end
 
   uninstall quit: "one.eux.copied"
